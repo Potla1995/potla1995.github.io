@@ -5,7 +5,7 @@ permalink: /publication/graphPartitionLearning
 excerpt: 'Tight query complexity bounds for learning graph partitions.'
 date: 2021-12-15
 venue: 'arXiv Preprint'
-paperurl: 'https://arxiv.org/pdf/2112.07897'
+paperurl: 
 citation: 'Mukherjee, Sayan. "Learning Graph Partitions." <i>arXiv preprint</i> arXiv:2112.07897 (2021).'
 ---
 Given a partition of a graph into connected components, the membership oracle asserts whether any

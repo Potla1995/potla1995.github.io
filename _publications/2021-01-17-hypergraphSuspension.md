@@ -5,7 +5,7 @@ permalink: /publication/hypergraphSuspension
 excerpt: 'Turan numbers for hypergraph suspensions.'
 date: 2021-01-17
 venue: 'arXiv Preprint'
-paperurl: 'https://arxiv.org/pdf/2101.06743.pdf'
+paperurl: 
 citation: 'Mukherjee, Sayan. "Tur\'an Numbers of Hypergraph Suspensions of Even Cycles." <i>arXiv preprint</i> arXiv:2101.06743 (2021).'
 ---
 For fixed $k\ge 2$, determining the order of magnitude of the number of edges in an $n$-vertex bipartite graph not containing $C_{2k}$, the cycle of length $2k$, is a long-standing open problem.
