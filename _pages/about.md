@@ -8,8 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-I am a Quantum Computing / Machine Learning Researcher at [Blueqat Research](https://corp.blueqat.com/research)!
+I am an Applied Researcher at [Blueqat Research](https://corp.blueqat.com/research), Japan!
 
-I completed my Ph.D. at the University of Illinois at Chicago in 2021. My thesis is titled Extremal Problems for Graphs and Hypergraphs, and I was advised by [Dhruv Mubayi](http://homepages.math.uic.edu/~mubayi/).
+I completed my Ph.D. at the University of Illinois at Chicago in 2021. My thesis is titled Extremal Problems for Graphs and Hypergraphs, which was advised by [Dr. Dhruv Mubayi](http://homepages.math.uic.edu/~mubayi/).
 
-I completed my undergraduate studies at the [Indian Statistical Institute](http://www.isibang.ac.in/~statmath/).
+My undergraduate studies were completed in 2016 from the [Indian Statistical Institute, Bangalore](http://www.isibang.ac.in/~statmath/).
+
+## Research Interests
+
+Quantum Computing, Machine Learning, Extremal Combinatorics.
