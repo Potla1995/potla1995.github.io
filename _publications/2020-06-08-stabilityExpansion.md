@@ -3,7 +3,7 @@ title: "Stability theorems for some Kruskal-Katona type results"
 collection: publications
 permalink: /publication/stabilityExpansion
 excerpt: 'Stability theorems for some Kruskal-Katona type results.'
-date: 2021-01-17
+date: 2020-06-08
 venue: 'arXiv Preprint'
 paperurl: 'https://arxiv.org/pdf/2006.04848'
 citation: 'Liu, Xizhi and Mukherjee, Sayan. "Tur\'an Numbers of Hypergraph Suspensions of Even Cycles." <i>arXiv preprint</i> arXiv:2006.04848 (2020).'
