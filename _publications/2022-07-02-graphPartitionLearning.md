@@ -3,8 +3,8 @@ title: "Learning Graph Partitions"
 collection: publications
 permalink: /publication/graphPartitionLearning
 excerpt: 'Tight query complexity bounds for learning graph partitions.'
-date: 2021-12-15
-venue: 'arXiv Preprint'
+date: 2022-07-02
+venue: 'Conference on Learning Theory 2022'
 paperurl: 
 citation: 'Mukherjee, Sayan. "Learning Graph Partitions." <i>arXiv preprint</i> arXiv:2112.07897 (2021).'
 ---
@@ -18,6 +18,6 @@ than learning the full partition, thus answering another question posed by the s
 introduce a more applicable version of this oracle, and prove asymptotically tight bounds of  $\widetilde \Theta(m)$ queries
 for both learning and verifying an $m$-edge hidden graph $G$ using this oracle.
 
-[Download paper here](https://arxiv.org/pdf/2112.07897)
+[Download paper here](/files/graphPartitionLearning.pdf)
 
 Recommended citation: Mukherjee, Sayan. "Learning Graph Partitions." <i>arXiv preprint</i> arXiv:2112.07897 (2021).
