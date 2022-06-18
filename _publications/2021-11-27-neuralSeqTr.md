@@ -20,6 +20,4 @@ the effectiveness of our method on several canonical 1D integration problems as 
 
 [Download paper here](/files/neuralSeqTr.pdf)
 
-Recommended citation: Mukherjee, Sabyasachi; Mukherjee, Sayan; Hua, Binh-Son; Umetani, Nobuyuki and Meister, Daniel. "Neural Sequence Transformation." <i>Computer Graphics Forum</i> (Wiley), Volume 40, Issue 7, Pages 131-140 (2021).
-
 DOI: 10.1111/cgf.14407 

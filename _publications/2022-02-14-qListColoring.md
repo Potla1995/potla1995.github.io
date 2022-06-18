@@ -12,6 +12,4 @@ Graph coloring is a computationally difficult problem, and currently the best kn
 
 [Download paper here](https://ieeexplore.ieee.org/iel7/8924785/9669178/09713701.pdf)
 
-Recommended citation: Mukherjee, Sayan. "A Grover search-based algorithm for the list coloring problem." <i>IEEE Transactions on Quantum Engineering</i> Volume 3 (2022).
-
 DOI: 10.1109/TQE.2022.3151137

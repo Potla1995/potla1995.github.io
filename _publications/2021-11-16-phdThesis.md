@@ -12,6 +12,4 @@ Given a fixed graph $G$ and a positive integer $n$, the extremal number [Turan, 
 
 [Download paper here](/files/thesis.pdf)
 
-Recommended citation: Mukherjee, Sayan. "Extremal Problems for Graphs and Hypergraphs." Thesis,<i>Department of Mathematics, Statistics and Computer Science, University of Illinois at Chicago</i> (2021)
-
 DOI: 10.25417/UIC.17026274.V1

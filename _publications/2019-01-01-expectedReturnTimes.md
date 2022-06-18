@@ -12,6 +12,4 @@ Biochemical systems are robust in nature. We define robustness of a biochemical 
 
 [Download paper here](https://www.ias.ac.in/article/fulltext/sadh/044/01/0003)
 
-Recommended citation: Mukherjee, Sayan; Ghosh, Debraj and De, Rajat K. "Expected return time to the initial state for biochemical systems with linear cyclic chains: unidirectional and bidirectional reactions." <i>Sādhanā</i> (Springer India) Volume 44, Issue 1, Pages 1-12 (2019).
-
 DOI: 10.1007/s12046-018-0989-5

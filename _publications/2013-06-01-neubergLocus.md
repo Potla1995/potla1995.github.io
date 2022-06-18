@@ -11,5 +11,3 @@ citation: 'Banerjee, Debdyuti and Mukherjee, Sayan. "Neuberg Locus And Its Prope
 In this article we discuss the famous Neuberg Locus. We also explore some special properties of the cubic, and provide purely synthetic proofs to them.
 
 [Download paper here](/files/neubergLocus.pdf)
-
-Recommended citation: Banerjee, Debdyuti and Mukherjee, Sayan. "Neuberg Locus And Its Properties." <i>Journal of Classical Geometry</i>, Volume 2(26) (2013)

@@ -17,5 +17,3 @@ whose extremal properties have been investigated by many researchers:
 the cancellative hypergraphs and hypergraphs without expansion of cliques.
 
 [Download paper here](https://arxiv.org/pdf/2006.04848)
-
-Recommended citation: Liu, Xizhi and Mukherjee, Sayan. "Stability theorems for some Kruskal-Katona type results." <i>arXiv preprint</i> arXiv:2006.04848 (2020).

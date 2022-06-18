@@ -14,5 +14,3 @@ In particular, we prove that the number of triples in an $n$-vertex triple syste
 Additionally, we construct new families of dense $C_6$-free bipartite graphs with $n$ vertices and $n^{4/3}$ edges in order of magnitude.
 
 [Download paper here](https://arxiv.org/pdf/2101.06743.pdf)
-
-Recommended citation: Mukherjee, Sayan. "Turan Numbers of Hypergraph Suspensions of Even Cycles." <i>arXiv preprint</i> arXiv:2101.06743 (2021).
