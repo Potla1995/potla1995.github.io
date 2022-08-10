@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an Applied Researcher at [Blueqat Research](https://corp.blueqat.com/research), Japan!
+I am an Applied Researcher at [Blueqat Research](https://corp.blueqat.com/research); and a Visiting Joint Researcher at [University of Tokyo](https://www.u-tokyo.ac.jp/en/index.html) (School of Sciences, 理学系研究科).
 
 I completed my Ph.D. at the University of Illinois at Chicago in 2021. My thesis is titled Extremal Problems for Graphs and Hypergraphs, which was advised by [Dr. Dhruv Mubayi](http://homepages.math.uic.edu/~mubayi/).
 
