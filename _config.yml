@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Sayan Mukherjee (Potla)"
 title_separator          : "-"
 name                     : &name "Sayan Mukherjee"
-description              : &description "Applied Researcher, Blueqat Inc."
+description              : &description "Applied Researcher, Blueqat Inc.; Visiting Joint Researcher, University of Tokyo"
 url                      : https://sayan.mukherjee.moe # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "potla1995.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Potla"
   avatar           : "profile.png"
-  bio              : "Applied Researcher in Quantum Computing and Mathematics"
+  bio              : "Applied Researcher, Quantum Computing and Mathematics"
   location         : "Tokyo, Japan"
-  employer         : "Blueqat Inc."
+  employer         : "Blueqat Inc. & University of Tokyo"
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=1U95To0AAAAJ&hl=en"
-  email            :
+  email            : "firstname (at) blueqat.com, firstname (at) g.ecc.u-tokyo.ac.jp"
   researchgate     : "https://www.researchgate.net/profile/Sayan-Mukherjee-6"
   uri              :
   bitbucket        :
