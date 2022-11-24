@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/suspensionFree
 excerpt: 'Counting number of triangles in graphs forbidding suspensions of bipartite graphs.'
 date: 2020-04-24
-venue: 'arXiv Preprint'
+venue: 'Discrete Mathematics (conditionally accepted)'
 paperurl: 
 citation: 'Mubayi, Dhruv, and Mukherjee, Sayan. "Triangles in graphs without bipartite suspensions." <i>arXiv preprint</i> arXiv:2004.11930 (2020).'
 ---
