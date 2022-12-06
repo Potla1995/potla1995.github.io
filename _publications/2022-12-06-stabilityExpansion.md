@@ -3,8 +3,8 @@ title: "Stability theorems for some Kruskal-Katona type results"
 collection: publications
 permalink: /publication/stabilityExpansion
 excerpt: 'Stability theorems for some Kruskal-Katona type results.'
-date: 2020-06-08
-venue: 'arXiv Preprint'
+date: 2022-12-06
+venue: 'European Journal of Combinatorics (accepted)'
 paperurl: 
 citation: 'Liu, Xizhi and Mukherjee, Sayan. "Stability theorems for some Kruskal-Katona type results." <i>arXiv preprint</i> arXiv:2006.04848 (2020).'
 ---
