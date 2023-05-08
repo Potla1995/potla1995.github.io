@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/stabilityExpansion
 excerpt: 'Stability theorems for some Kruskal-Katona type results.'
 date: 2022-12-06
-venue: 'European Journal of Combinatorics (accepted)'
-paperurl: 
-citation: 'Liu, Xizhi and Mukherjee, Sayan. "Stability theorems for some Kruskal-Katona type results." <i>arXiv preprint</i> arXiv:2006.04848 (2020).'
+venue: 'European Journal of Combinatorics Vol. 110'
+paperurl: 'https://doi.org/10.1016/j.ejc.2022.103666'
+citation: 'Liu, Xizhi and Mukherjee, Sayan. "Stability theorems for some Kruskal-Katona type results." <i>European J. Comb. 110 (2023)</i> arXiv:2006.04848 (2020).'
 ---
 The classical Kruskal-Katona theorem gives a tight upper bound for the size of
 an $r$-uniform hypergraph $\mathcal{H}$ as a function of the size of its shadow.
