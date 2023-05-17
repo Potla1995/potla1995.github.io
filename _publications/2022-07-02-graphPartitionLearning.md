@@ -5,7 +5,7 @@ permalink: /publication/graphPartitionLearning
 excerpt: 'Tight query complexity bounds for learning graph partitions.'
 date: 2022-07-02
 venue: 'Conference on Learning Theory 2022'
-paperurl: 
+paperurl: 'https://arxiv.org/pdf/2112.07897.pdf'
 citation: 'Liu, Xizhi and Mukherjee, Sayan. "Tight query complexity bounds for learning graph partitions." <i>arXiv preprint</i> arXiv:2112.07897 (2021).'
 ---
 Given a partition of a graph into connected components, the membership oracle asserts whether any two vertices of the graph lie in the same component or not.

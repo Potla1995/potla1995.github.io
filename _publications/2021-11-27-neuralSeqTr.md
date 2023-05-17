@@ -5,7 +5,7 @@ permalink: /publication/neuralSeqTr
 excerpt: 'Using neural networks to perform sequence transformation.'
 date: 2021-11-27
 venue: 'Computer Graphics Forum; Pacific Graphics Conference 2021'
-paperurl: 
+paperurl: 'https://doi.org/10.1111/cgf.14407'
 citation: 'Mukherjee, Sabyasachi; Mukherjee, Sayan; Hua, Binh-Son; Umetani, Nobuyuki and Meister, Daniel. "Neural Sequence Transformation." <i>Computer Graphics Forum</i> (Wiley), Volume 40, Issue 7, Pages 131-140 (2021).'
 ---
 Monte Carlo integration is a technique for numerically estimating a definite integral by stochastically sampling its integrand.
