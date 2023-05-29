@@ -13,7 +13,9 @@ Historically speaking, one of the first papers that give a general treatment of 
 
 ## Bipartite suspensions
 
-In 2020, together with my PhD advisor Dhruv Mubayi, we wrote a paper where we focused on the specific case $T=K_3$ and $H$ a _suspension_ of a bipartite graph. The original manuscript is available at [arXiv:2004.11930](https://arxiv.org/abs/2004.11930). Among several results, we studied the case $H=\hat{P}_k$, which is the main focus of this blog post.
+In 2020, together with my PhD advisor Dhruv Mubayi, we wrote a paper where we focused on the specific case $T=K_3$ and $H$ a _suspension_ of a bipartite graph.
+The original manuscript is available at [arXiv:2004.11930](https://arxiv.org/abs/2004.11930).
+Among several results, we studied the case $H=\hat{P}_k$, which is the main focus of this blog post.
 
 **In our notation, $P_k$ is the path on $k$ edges (and $k+1$ vertices)**
 
@@ -30,7 +32,7 @@ and for $k=3$ and $k=5$ we improved the $o(n^2)$ error bound to $O(n)$.
 ## The work of Gerbner
 
 Around two years after our paper was initially uploaded to arXiv, D\'aniel Gerbner proved in [arXiv:2203.12527](https://arxiv.org/abs/2203.12527) that for $n\ge 525$ and $k=3$, the result above is exact; i.e. 
-$$(1) \qquad \text{ex}(n,K_3,\hat{P}_3)=\left\lfloor n^2/8\right\rfloor.$$
+$$\text{ex}(n,K_3,\hat{P}_3)=\left\lfloor n^2/8\right\rfloor.$$
 
 Their result actually builds upon the technique of asserting that the graphs that have many triangles and are $\hat{P}_3$-free are also Berge $K_4$-free, and use this along with progressive induction to obtain the desired upper bound.
 
@@ -61,7 +63,7 @@ The total number of graphs which have the above two triangles as subgraphs then,
 
 This is still not in the computationally tractable range, and we need to reduce the redundancy even further.
 
-In that vein, we observe that no triangle in $G$ can now intersect the edges $\{0,2\},\{0,3\},\{1,2\},\{1,3\}$. They can be deleted from the set of allowed triangles.
+In that vein, we observe that no triangle in $G$ can now intersect the edges $\{02\},\{03\},\{12\},\{13\}$. They can be deleted from the set of allowed triangles.
 This removes $16$ more triangles from the allowed set of triangles, giving us a total number of graphs of $\binom{\binom83-18}{9-2}\approx 1.26\times 10^7$.
 A naive implementation of checking whether each graph is $\hat{P}_3$-free requires $8 \cdot 7^3$ operations, giving a total cost of around $4.94\times 10^{9}$ operations. 
 This calculation requires around 10 minutes of computation time (on a single thread) of an Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz laptop processor.
@@ -113,7 +115,7 @@ This leads into the next case ($n=10$).
 
 - Say $G$ has $10$ vertices and $\lfloor 10^2/8\rfloor + 1 = 13$ triangles.
 Again, by the same calculation as the last case ($t(G)\le (20-2)/2 = 9$ if $G$ had no $K_4$), we find a $K_4$ inside $G$.
-Note that $K_4$ is a triangle block by itself, and $\hat{P}_3$'s must be part of a single block.
+Note that $K_4$ is a triangle block by itself, and $\hat P_3$'s must be part of a single block.
 Hence _contracting_ all the vertices of this $K_4$ leads us to a graph $G'$ on $7$ vertices and $9$ triangles.
 As no graph on $8$ vertices and $9$ triangles is $\hat{P}_3$-free, this also implies that $G'$ has a $\hat{P}_3$.
 
@@ -134,12 +136,12 @@ This analysis along with Gerbner's work _exactly_ determines $\text{ex}(n, K_3, 
 We demonstrate that the values of $\text{ex}(n,K_3,\hat{P}_3)$
 are given by,
 
-- $\text{ex}(4, K_3,\hat{P}_3) = 4$, extremal graph is $K_4$
-- $\text{ex}(5, K_3,\hat{P}_3) = 4$, extremal graph is $K_4(0,1,2,3)\sqcup\{4\}$
-- $\text{ex}(6, K_3,\hat{P}_3) = 5$, extremal graph is $K_4(0,1,2,3)\cup \text{triangle}(0,4,5)$
-- $\text{ex}(7, K_3,\hat{P}_3) = 8$, extremal graph is $K_4(0,1,2,3)\cup K_4(0,4,5,6)$
+- $\text{ex}(4, K_3,\hat{P}_3) = 4$, an extremal graph is $K_4$
+- $\text{ex}(5, K_3,\hat{P}_3) = 4$, an extremal graph is $K_4(0,1,2,3)\sqcup\{4\}$
+- $\text{ex}(6, K_3,\hat{P}_3) = 5$, an extremal graph is $K_4(0,1,2,3)\cup \text{triangle}(0,4,5)$
+- $\text{ex}(7, K_3,\hat{P}_3) = 8$, an extremal graph is $K_4(0,1,2,3)\cup K_4(0,4,5,6)$
 - $$\text{ex}(n,K_3,\hat{P}_3)= \lfloor n^2/8 \rfloor \text{ for }n\ge 8,$$
-and the extremal graph is $K_{\lfloor n/2\rfloor,\lceil n/2\rceil}$ with a matching in the smaller part.
+and an extremal graph is $K_{\lfloor n/2\rfloor,\lceil n/2\rceil}$ with a matching in the smaller part.
 
 
 Closing the gaps in $\text{ex}(n,K_3,\hat{P}_k)$ for larger $k$ will require some other ideas or techniques, as our current technique does not easily generalize to larger $k$.
