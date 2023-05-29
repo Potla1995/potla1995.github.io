@@ -112,8 +112,9 @@ In this case, Observation 1 gives us a vertex $a$ with $3$ triangles, deleting w
 This leads into the next case ($n=10$).
 
 - Say $G$ has $10$ vertices and $\lfloor 10^2/8\rfloor + 1 = 13$ triangles.
-Again, by the same calculation as the last case ($t(G)\le (20-2)/2 = 9$ if $G$ had no $K_4$), we find a $K_4=\{a,b,c,d\}$ inside $G$.
-Note that $K_4$ is a triangle block by itself, and hence _contracting_ all the vertices of this $K_4$ leads us to a graph $G'$ on $7$ vertices and $9$ triangles.
+Again, by the same calculation as the last case ($t(G)\le (20-2)/2 = 9$ if $G$ had no $K_4$), we find a $K_4$ inside $G$.
+Note that $K_4$ is a triangle block by itself, and $\hat{P}_3$'s must be part of a single block.
+Hence _contracting_ all the vertices of this $K_4$ leads us to a graph $G'$ on $7$ vertices and $9$ triangles.
 As no graph on $8$ vertices and $9$ triangles is $\hat{P}_3$-free, this also implies that $G'$ has a $\hat{P}_3$.
 
 - Say $G$ has $9$ vertices and $\lfloor 9^2/8\rfloor + 1 = 11$ triangles.
@@ -133,10 +134,11 @@ This analysis along with Gerbner's work _exactly_ determines $\text{ex}(n, K_3, 
 We demonstrate that the values of $\text{ex}(n,K_3,\hat{P}_3)$
 are given by,
 
+- $\text{ex}(4, K_3,\hat{P}_3) = 4$, extremal graph is $K_4$
 - $\text{ex}(5, K_3,\hat{P}_3) = 4$, extremal graph is $K_4(0,1,2,3)\sqcup\{4\}$
 - $\text{ex}(6, K_3,\hat{P}_3) = 5$, extremal graph is $K_4(0,1,2,3)\cup \text{triangle}(0,4,5)$
 - $\text{ex}(7, K_3,\hat{P}_3) = 8$, extremal graph is $K_4(0,1,2,3)\cup K_4(0,4,5,6)$
-- $\text{ex}(n, K_3,\hat{P}_3) = \lfloor n^2/8\rfloor$ for $n\ge 8$, extremal graph is $K_{\lfloor n/2\rfloor,\lceil n/2\rceil}$ with a matching in the smaller part.
+- $\text{ex}(n, K_3,$ $\hat{P}_3)$ $= \lfloor n^2/8 \rfloor$ for $n\ge 8$, extremal graph is $K_{\lfloor n/2\rfloor,\lceil n/2\rceil}$ with a matching in the smaller part.
 
 
 Closing the gaps in $\text{ex}(n,K_3,\hat{P}_k)$ for larger $k$ will require some other ideas or techniques, as our current technique does not easily generalize to larger $k$.
