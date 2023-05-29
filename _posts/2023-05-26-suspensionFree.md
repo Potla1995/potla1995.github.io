@@ -68,7 +68,7 @@ This removes $16$ more triangles from the allowed set of triangles, giving us a 
 A naive implementation of checking whether each graph is $\hat{P}_3$-free requires $8 \cdot 7^3$ operations, giving a total cost of around $4.94\times 10^{9}$ operations. 
 This calculation requires around 10 minutes of computation time (on a single thread) of an Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz laptop processor.
 
-The code we used for this brute force calculation is available [here](./triangle_count_parallel.py). Below is the output of the run.
+The code we used for this brute force calculation is available [here](https://github.com/Potla1995/potla1995.github.io/blob/master/_posts//triangle_count_parallel.py). Below is the output of the run.
 ```
 Removed triangles: {(0, 3, 6) (1, 2, 5) (1, 3, 6) (0, 2, 7) (0, 2, 4) (0, 3, 5) (1, 2, 4) (1, 2, 7) (1, 3, 5) (0, 2, 6) (0, 3, 7) (0, 3, 4) (1, 2, 6) (1, 3, 4) (1, 3, 7) (0, 2, 5) }
 Available triangles: {(0, 5, 7), (3, 5, 6), (1, 5, 7), (0, 1, 6), (2, 5, 7), (4, 5, 6), (4, 6, 7), (1, 4, 5), (3, 4, 7), (2, 4, 5), (3, 6, 7), (2, 3, 6), (0, 4, 7), (0, 5, 6), (0, 6, 7), (1, 5, 6), (5, 6, 7), (0, 1, 5), (2, 5, 6), (2, 6, 7), (3, 4, 6), (1, 4, 7), (0, 2, 3), (2, 4, 7), (2, 3, 5), (0, 4, 6), (1, 6, 7), (3, 5, 7), (0, 1, 4), (0, 1, 7), (4, 5, 7), (1, 2, 3), (1, 4, 6), (3, 4, 5), (2, 3, 4), (2, 3, 7), (2, 4, 6), (0, 4, 5)}
@@ -121,7 +121,7 @@ As no graph on $8$ vertices and $9$ triangles is $\hat{P}_3$-free, this also imp
 
 - Say $G$ has $9$ vertices and $\lfloor 9^2/8\rfloor + 1 = 11$ triangles.
 Again we can easily find a $K_4$ and contract it, giving a graph $G'$ on $6$ vertices and $8$ triangles.
-It's definitely possible to prove that $G'$ has a $\hat{P}_3$ by hand, but I just ran the [above script](./triangle_count_parallel.py), modifying the variables `num_vertices` and `num_triangles`.
+It's definitely possible to prove that $G'$ has a $\hat{P}_3$ by hand, but I just ran the [above script](https://github.com/Potla1995/potla1995.github.io/blob/master/_posts//triangle_count_parallel.py), modifying the variables `num_vertices` and `num_triangles`.
 The following output was obtained:
 ```
 Removed triangles: {(1, 2, 5) (0, 2, 4) (0, 3, 5) (1, 2, 4) (1, 3, 5) (0, 3, 4) (1, 3, 4) (0, 2, 5) }
