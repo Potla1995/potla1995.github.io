@@ -130,8 +130,9 @@ Finished iteration.
 # Concluding Remarks
 
 This analysis along with Gerbner's work _exactly_ determines $\text{ex}(n, K_3, \hat{P}_3)$.
-We demonstrate that the values of $$\text{ex}(n,K_3,\hat{P}_3)$$
+We demonstrate that the values of $\text{ex}(n,K_3,\hat{P}_3)$
 are given by,
+
 -----------------------------------------------------------------------------------------------------------------
 | $n$  | $\text{ex}(n,K_3,\hat{P}_3)$ |    Extremal graph                                                       |
 -----------------------------------------------------------------------------------------------------------------
