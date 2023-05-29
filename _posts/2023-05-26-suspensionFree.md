@@ -138,7 +138,8 @@ are given by,
 - $\text{ex}(5, K_3,\hat{P}_3) = 4$, extremal graph is $K_4(0,1,2,3)\sqcup\{4\}$
 - $\text{ex}(6, K_3,\hat{P}_3) = 5$, extremal graph is $K_4(0,1,2,3)\cup \text{triangle}(0,4,5)$
 - $\text{ex}(7, K_3,\hat{P}_3) = 8$, extremal graph is $K_4(0,1,2,3)\cup K_4(0,4,5,6)$
-- $\text{ex}(n, K_3,$ $\hat{P}_3)$ $= \lfloor n^2/8 \rfloor$ for $n\ge 8$, extremal graph is $K_{\lfloor n/2\rfloor,\lceil n/2\rceil}$ with a matching in the smaller part.
+- $$\text{ex}(n,K_3,\hat{P}_3)= \lfloor n^2/8 \rfloor \text{ for }n\ge 8,$$
+and the extremal graph is $K_{\lfloor n/2\rfloor,\lceil n/2\rceil}$ with a matching in the smaller part.
 
 
 Closing the gaps in $\text{ex}(n,K_3,\hat{P}_k)$ for larger $k$ will require some other ideas or techniques, as our current technique does not easily generalize to larger $k$.
