@@ -80,7 +80,8 @@ def __main__():
     print(f'Generated {len(graph_triangles)} many graphs.')
 
     # For each combination, generate a graph and evaluate if it is \hat{P_3}-free
-    Parallel(n_jobs=30)(delayed(calculate_hat_p3_free)(graph_triangles[i]) for i in range(len(graph_triangles)))
+    # Set n_jobs to however many CPU threads are available
+    Parallel(n_jobs=7)(delayed(calculate_hat_p3_free)(graph_triangles[i]) for i in range(len(graph_triangles)))
 
     print('Finished iteration.')
 
