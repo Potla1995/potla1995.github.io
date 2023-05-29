@@ -64,7 +64,7 @@ This is still not in the computationally tractable range, and we need to reduce 
 In that vein, we observe that no triangle in $G$ can now intersect the edges $\{0,2\},\{0,3\},\{1,2\},\{1,3\}$. They can be deleted from the set of allowed triangles.
 This removes $16$ more triangles from the allowed set of triangles, giving us a total number of graphs of $\binom{\binom83-18}{9-2}\approx 1.26\times 10^7$.
 A naive implementation of checking whether each graph is $\hat{P}_3$-free requires $8 \cdot 7^3$ operations, giving a total cost of around $4.94\times 10^{9}$ operations. 
-This calculation requires around 10 minutes of computation time (on a single thread) of an Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz.
+This calculation requires around 10 minutes of computation time (on a single thread) of an Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz laptop processor.
 
 The code we used for this brute force calculation is available [here](./triangle_count_parallel.py). Below is the output of the run.
 ```
