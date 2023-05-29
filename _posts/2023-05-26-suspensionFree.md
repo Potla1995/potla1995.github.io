@@ -133,11 +133,13 @@ This analysis along with Gerbner's work _exactly_ determines $\text{ex}(n, K_3, 
 We demonstrate that the values of $\text{ex}(n,K_3,\hat{P}_3)$
 are given by,
 
------------------------------------------------------------------------------------------------------------------
-| $n$  | $\text{ex}(n,K_3,\hat{P}_3)$ |    Extremal graph                                                       |
------------------------------------------------------------------------------------------------------------------
-| $5$  | $4$                          | $K_4(0,1,2,3)\sqcup \{4\}$                                              |
-| $6$  | $5$                          | $K_4(0,1,2,3)\cup (0,4,5)$                                              |
-| $7$  | $8$                          | $K_4(0,1,2,3)\cup K_4(0,4,5,6)                                          |
-|$\ge8$| $\lfloor n^2/8\rfloor$       | $K_{\lfloor n/2\rfloor,\lceil n/2\rceil}$ with matching in smaller part |
------------------------------------------------------------------------------------------------------------------
+
+| n  | ex(n,K_3,hat-P_3) |    Extremal graph                                                       |
+----------------------------------------------------------------------------------------------------
+| 5  | 4                 | $K_4(0,1,2,3)\sqcup \{4\}$                                              |
+| 6  | 5                 | $K_4(0,1,2,3)\cup (0,4,5)$                                              |
+| 7  | 8                 | $K_4(0,1,2,3)\cup K_4(0,4,5,6)                                          |
+|>=8 | floor(n^2/8)      | $K_{\lfloor n/2\rfloor,\lceil n/2\rceil}$ with matching in smaller part |
+
+
+Closing the gaps in $\text{ex}(n,K_3,\hat{P}_k)$ for larger $k$ will require some other ideas or techniques, as our current technique does not easily generalize to larger $k$.
