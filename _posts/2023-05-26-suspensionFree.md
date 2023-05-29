@@ -129,11 +129,11 @@ Finished iteration.
 
 # Concluding Remarks
 
-This analysis along with Gerbner's work _exactly_ determines $\text{ex}(n, K_3, \hat{P}_4)$.
-We demonstrate that the values of $$\text{ex}(n,K_3,\hat{P}_4)$$
+This analysis along with Gerbner's work _exactly_ determines $\text{ex}(n, K_3, \hat{P}_3)$.
+We demonstrate that the values of $$\text{ex}(n,K_3,\hat{P}_3)$$
 are given by,
 -----------------------------------------------------------------------------------------------------------------
-| $n$  | $\text{ex}(n,K_3,\hat{P}_4)$ |    Extremal graph                                                       |
+| $n$  | $\text{ex}(n,K_3,\hat{P}_3)$ |    Extremal graph                                                       |
 -----------------------------------------------------------------------------------------------------------------
 | $5$  | $4$                          | $K_4(0,1,2,3)\sqcup \{4\}$                                              |
 | $6$  | $5$                          | $K_4(0,1,2,3)\cup (0,4,5)$                                              |
