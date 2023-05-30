@@ -78,6 +78,9 @@ Finished iteration.
 
 ## Next cases $n=9, 10, 11$.
 
+<color="red">There is an issue with the below "proof" in the cases $n=9$ and $n=10$: contraction can introduce new triangles and it is possible that the $\hat{P}_3$'s we find in the contracted graph have the apex node at the contracted vertex.
+I'm trying to fix this problem right now...</color>
+
 The main idea behind this proof is simply follow the steps of our original proof in [arXiv:2004.11930](https://arxiv.org/abs/2004.11930), Page 9.
 
 We observe the following:

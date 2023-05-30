@@ -1,11 +1,11 @@
 import networkx as nx
 from matplotlib import pyplot as plt
 from itertools import combinations
+import multiprocessing
 from joblib import Parallel, delayed
 
-
-num_vertices = 8
-num_triangles = 9
+num_vertices = 7
+num_triangles = 8
 
 
 def total_triangles(host_graph: nx.Graph):
@@ -15,7 +15,7 @@ def total_triangles(host_graph: nx.Graph):
         N_v = nx.Graph()
         N_v.add_edges_from([(i, j) for i in nbr for j in nbr if i < j and i in host_graph[j]])
         total_triangles += N_v.number_of_edges()
-    return total_triangles/3
+    return total_triangles / 3
 
 
 def is_p3_hat_free(host_graph: nx.Graph):
@@ -81,7 +81,10 @@ def __main__():
 
     # For each combination, generate a graph and evaluate if it is \hat{P_3}-free
     # Set n_jobs to however many CPU threads are available
-    Parallel(n_jobs=7)(delayed(calculate_hat_p3_free)(graph_triangles[i]) for i in range(len(graph_triangles)))
+    num_cores = multiprocessing.cpu_count()
+    Parallel(n_jobs=num_cores - 1)(
+        delayed(calculate_hat_p3_free)(graph_triangles[i]) for i in range(len(graph_triangles))
+    )
 
     print('Finished iteration.')
 
