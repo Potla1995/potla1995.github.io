@@ -31,7 +31,7 @@ and for $k=3$ and $k=5$ we improved the $o(n^2)$ error bound to $O(n)$.
 
 ## The work of Gerbner
 
-Around two years after our paper was initially uploaded to arXiv, D\'aniel Gerbner proved in [arXiv:2203.12527](https://arxiv.org/abs/2203.12527) that for $n\ge 525$ and $k=3$, the result above is exact; i.e. 
+Around two years after our paper was initially uploaded to arXiv, Daniel Gerbner proved in [arXiv:2203.12527](https://arxiv.org/abs/2203.12527) that for a sufficiently large $n$ (say $n\ge 8525$) and $k=3$, the result above is exact; i.e. 
 $$\text{ex}(n,K_3,\hat{P}_3)=\left\lfloor n^2/8\right\rfloor.$$
 
 Their result actually builds upon the technique of asserting that the graphs that have many triangles and are $\hat{P}_3$-free are also Berge $K_4$-free, and use this along with progressive induction to obtain the desired upper bound.
@@ -82,7 +82,7 @@ Finished iteration.
 
 The program that we wrote above also outputs all possible configurations of $7$-vertex graphs with $8$ triangles. The only (upto isomorphism) such graph is given by two $K_4$'s intersecting at a vertex:
 
-![Two K_4's intersecting at a vertex](./7-vertex-8-triangles-P3-hat-free.png)
+![Two K_4's intersecting at a vertex](https://github.com/Potla1995/potla1995.github.io/raw/master/_posts/7-vertex-8-triangles-P3-hat-free.png)
 
 ## Next cases $n=9, 10, 11$.
 
@@ -129,24 +129,24 @@ Again, by the same calculation as the last case ($t(G)\le (20-2)/2 = 9$ if $G$ h
 Say the vertices of this $K_4$ are $a,b,c,d$.
 Note that $K_4$ is a triangle block by itself, and $\hat P_3$'s must be part of a single block.
 
-In what follows, we denote by $x_a$ the number of _external_ neighbors of $a$ (those outside the $K_4$).
-The proof of **Observation 1** gave us a vertex $a$ with $x_a\le 1$.
-Together with **Assumption 1**, this means $x_a=0$. 
-Then, $x_b+x_c+x_d\le 6$. Without loss of generality assume that $b$ only lies in one outward triangle, meaning $x_b=2$. Then, let $G'=G-a-b$. It is clear that $G'$ has $t(G)-4 = 9$ triangles on $8$ vertices, which, by the base case, has a $\hat{P}_3$.
+    In what follows, we denote by $x_a$ the number of _external_ neighbors of $a$ (those outside the $K_4$).
+    The proof of **Observation 1** gave us a vertex $a$ with $x_a\le 1$.
+    Together with **Assumption 1**, this means $x_a=0$. 
+    Then, $x_b+x_c+x_d\le 6$. Without loss of generality assume that $b$ only lies in one outward triangle, meaning $x_b=2$. Then, let $G'=G-a-b$. It is clear that $G'$ has $t(G)-4 = 9$ triangles on $8$ vertices, which, by the base case, has a $\hat{P}_3$.
 
 - Say $G$ has $9$ vertices and $\lfloor 9^2/8\rfloor + 1 = 11$ triangles.
 Again by **Assumption 1** we can easily find a $K_4$ on vertices $a,b,c,d$ with $x_a=0$.
 Since $x_b+x_c+x_d\le 5$, we can assume without loss of generality that $x_b\le 1$ and hence again by **Assumption 1**, $x_b=0$.
 
-Now $x_c+x_d\le 5$, implying we may assume $x_c\le 2$. Deleting $a,b,c$ gives a graph $G'$ on $6$ vertices and at least $11-5=6$ triangles.
-It's definitely possible to prove that $G'$ has a $\hat{P}_3$ by hand, but I just ran the [above script](https://github.com/Potla1995/potla1995.github.io/blob/master/_posts/triangle_count_parallel.py), modifying the variables `num_vertices` and `num_triangles`.
-The following output was obtained:
-```
-Removed triangles: {(1, 2, 5) (0, 2, 4) (0, 3, 5) (1, 2, 4) (1, 3, 5) (0, 3, 4) (1, 3, 4) (0, 2, 5) }
-Available triangles: {(1, 4, 5), (2, 4, 5), (0, 1, 5), (0, 2, 3), (2, 3, 5), (0, 1, 4), (1, 2, 3), (3, 4, 5), (2, 3, 4), (0, 4, 5)}
-Generated 210 many graphs.
-Finished iteration.
-```
+    Now $x_c+x_d\le 5$, implying we may assume $x_c\le 2$. Deleting $a,b,c$ gives a graph $G'$ on $6$ vertices and at least $11-5=6$ triangles.
+    It's definitely possible to prove that $G'$ has a $\hat{P}_3$ by hand, but I just ran the [above script](https://github.com/Potla1995/potla1995.github.io/blob/master/_posts/triangle_count_parallel.py), modifying the variables `num_vertices` and `num_triangles`.
+    The following output was obtained:
+    ```
+    Removed triangles: {(1, 2, 5) (0, 2, 4) (0, 3, 5) (1, 2, 4) (1, 3, 5) (0, 3, 4) (1, 3, 4) (0, 2, 5) }
+    Available triangles: {(1, 4, 5), (2, 4, 5), (0, 1, 5), (0, 2, 3), (2, 3, 5), (0, 1, 4), (1, 2, 3), (3, 4, 5), (2, 3, 4), (0, 4, 5)}
+    Generated 210 many graphs.
+    Finished iteration.
+    ```
 
 # Concluding Remarks
 
