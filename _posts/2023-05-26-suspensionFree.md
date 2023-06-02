@@ -52,6 +52,8 @@ We need a few useful lemmas which we just state here (with references):
 
 Lemma 1 and 2 can be found in our [original manuscript](https://arxiv.org/abs/2004.11930).
 
+- **Assumption 1:** In what follows, we assume that every edge of the graphs are contained in at least one triangle. This can be done by simply deleting extra edges that do not contribute to any triangle.
+
 ## Base case: $n=8$ (using a computer program).
 
 It needs to be shown that any $8$-vertex graph with at least $\lfloor 8^2/8\rfloor+1 = 9$ copies of $K_3$ contains a copy of $\hat{P}_3$.
@@ -68,7 +70,7 @@ This removes $16$ more triangles from the allowed set of triangles, giving us a 
 A naive implementation of checking whether each graph is $\hat{P}_3$-free requires $8 \cdot 7^3$ operations, giving a total cost of around $4.94\times 10^{9}$ operations. 
 This calculation requires around 10 minutes of computation time (on 7 threads) of an Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz laptop processor.
 
-The code we used for this brute force calculation is available [here](https://github.com/Potla1995/potla1995.github.io/blob/master/_posts//triangle_count_parallel.py). Below is the output of the run.
+The code we used for this brute force calculation is available [here](https://github.com/Potla1995/potla1995.github.io/blob/master/_posts/triangle_count_parallel.py). Below is the output of the run.
 ```
 Removed triangles: {(0, 3, 6) (1, 2, 5) (1, 3, 6) (0, 2, 7) (0, 2, 4) (0, 3, 5) (1, 2, 4) (1, 2, 7) (1, 3, 5) (0, 2, 6) (0, 3, 7) (0, 3, 4) (1, 2, 6) (1, 3, 4) (1, 3, 7) (0, 2, 5) }
 Available triangles: {(0, 5, 7), (3, 5, 6), (1, 5, 7), (0, 1, 6), (2, 5, 7), (4, 5, 6), (4, 6, 7), (1, 4, 5), (3, 4, 7), (2, 4, 5), (3, 6, 7), (2, 3, 6), (0, 4, 7), (0, 5, 6), (0, 6, 7), (1, 5, 6), (5, 6, 7), (0, 1, 5), (2, 5, 6), (2, 6, 7), (3, 4, 6), (1, 4, 7), (0, 2, 3), (2, 4, 7), (2, 3, 5), (0, 4, 6), (1, 6, 7), (3, 5, 7), (0, 1, 4), (0, 1, 7), (4, 5, 7), (1, 2, 3), (1, 4, 6), (3, 4, 5), (2, 3, 4), (2, 3, 7), (2, 4, 6), (0, 4, 5)}
@@ -76,10 +78,16 @@ Generated 12620256 many graphs.
 Finished iteration.
 ```
 
+## Bonus case: $n=7$.
+
+The program that we wrote above also outputs all possible configurations of $7$-vertex graphs with $8$ triangles. The only (upto isomorphism) such graph is given by two $K_4$'s intersecting at a vertex:
+
+![Two K_4's intersecting at a vertex](./7-vertex-8-triangles-P3-hat-free.png)
+
 ## Next cases $n=9, 10, 11$.
 
-<color="red">There is an issue with the below "proof" in the cases $n=9$ and $n=10$: contraction can introduce new triangles and it is possible that the $\hat{P}_3$'s we find in the contracted graph have the apex node at the contracted vertex.
-I'm trying to fix this problem right now...</color>
+<span style="color:red">**A previous version of this proof had a mistake in the cases $n=9$ and $n=10$: contraction can introduce new triangles and it is possible that the $\hat{P}_3$'s we find in the contracted graph had the apex node at the contracted vertex.**
+Said issue has been fixed now as we're only using the deletion operation.</span>
 
 The main idea behind this proof is simply follow the steps of our original proof in [arXiv:2004.11930](https://arxiv.org/abs/2004.11930), Page 9.
 
@@ -118,13 +126,20 @@ This leads into the next case ($n=10$).
 
 - Say $G$ has $10$ vertices and $\lfloor 10^2/8\rfloor + 1 = 13$ triangles.
 Again, by the same calculation as the last case ($t(G)\le (20-2)/2 = 9$ if $G$ had no $K_4$), we find a $K_4$ inside $G$.
+Say the vertices of this $K_4$ are $a,b,c,d$.
 Note that $K_4$ is a triangle block by itself, and $\hat P_3$'s must be part of a single block.
-Hence _contracting_ all the vertices of this $K_4$ leads us to a graph $G'$ on $7$ vertices and $9$ triangles.
-As no graph on $8$ vertices and $9$ triangles is $\hat{P}_3$-free, this also implies that $G'$ has a $\hat{P}_3$.
+
+In what follows, we denote by $x_a$ the number of _external_ neighbors of $a$ (those outside the $K_4$).
+The proof of **Observation 1** gave us a vertex $a$ with $x_a\le 1$.
+Together with **Assumption 1**, this means $x_a=0$. 
+Then, $x_b+x_c+x_d\le 6$. Without loss of generality assume that $b$ only lies in one outward triangle, meaning $x_b=2$. Then, let $G'=G-a-b$. It is clear that $G'$ has $t(G)-4 = 9$ triangles on $8$ vertices, which, by the base case, has a $\hat{P}_3$.
 
 - Say $G$ has $9$ vertices and $\lfloor 9^2/8\rfloor + 1 = 11$ triangles.
-Again we can easily find a $K_4$ and contract it, giving a graph $G'$ on $6$ vertices and $8$ triangles.
-It's definitely possible to prove that $G'$ has a $\hat{P}_3$ by hand, but I just ran the [above script](https://github.com/Potla1995/potla1995.github.io/blob/master/_posts//triangle_count_parallel.py), modifying the variables `num_vertices` and `num_triangles`.
+Again by **Assumption 1** we can easily find a $K_4$ on vertices $a,b,c,d$ with $x_a=0$.
+Since $x_b+x_c+x_d\le 5$, we can assume without loss of generality that $x_b\le 1$ and hence again by **Assumption 1**, $x_b=0$.
+
+Now $x_c+x_d\le 5$, implying we may assume $x_c\le 2$. Deleting $a,b,c$ gives a graph $G'$ on $6$ vertices and at least $11-5=6$ triangles.
+It's definitely possible to prove that $G'$ has a $\hat{P}_3$ by hand, but I just ran the [above script](https://github.com/Potla1995/potla1995.github.io/blob/master/_posts/triangle_count_parallel.py), modifying the variables `num_vertices` and `num_triangles`.
 The following output was obtained:
 ```
 Removed triangles: {(1, 2, 5) (0, 2, 4) (0, 3, 5) (1, 2, 4) (1, 3, 5) (0, 3, 4) (1, 3, 4) (0, 2, 5) }
