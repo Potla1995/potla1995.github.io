@@ -6,7 +6,7 @@ excerpt: 'Tight query complexity bounds for learning graph partitions.'
 date: 2022-07-02
 venue: 'Conference on Learning Theory 2022'
 paperurl: 'https://arxiv.org/pdf/2112.07897.pdf'
-citation: 'Liu, Xizhi and Mukherjee, Sayan. "Tight query complexity bounds for learning graph partitions." <i>arXiv preprint</i> arXiv:2112.07897 (2021).'
+citation: 'Liu, Xizhi, and Mukherjee, Sayan. "Tight query complexity bounds for learning graph partitions." <i>35th Conference on Learning Theory (COLT). Proceedings in Machine Learning Research</i> (2022).'
 ---
 Given a partition of a graph into connected components, the membership oracle asserts whether any two vertices of the graph lie in the same component or not.
 We prove that for $n\ge k\ge 2$, learning the components of an $n$-vertex hidden graph with $k$ components requires at least $(k-1)n-\binom k2$ membership queries.
