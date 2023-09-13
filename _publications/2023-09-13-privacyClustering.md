@@ -5,7 +5,7 @@ permalink: /publication/privacyClustering
 excerpt: 'Spectral clustering is robust for social networks in general with privacy budget $\epsilon=O(\log n)$, and this result is tight.'
 date: 2023-09-13
 venue: 'arXiv Preprint'
-paperurl: 'not-posted-yet'
+paperurl: '/files/privacyClustering.pdf'
 citation: 'Mukherjee, Sayan and Suppakitpaisarn, Vorapong. Robustness for Spectral Clustering of General Graphs under Local Differential Privacy. (preprint)'
 ---
 Spectral clustering is a widely used algorithm to find clusters in networks.
@@ -19,3 +19,4 @@ Conversely, although clustering outcomes have been stable for dense and well-clu
 This indicates that the best privacy budget obtainable for general graphs is $\Theta(\log n)$.
 
 [Download paper here](/files/privacyClustering.pdf)
+
