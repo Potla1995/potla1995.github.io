@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/privacyClustering
 excerpt: 'Spectral clustering is robust for social networks in general with privacy budget $\epsilon=O(\log n)$, and this result is tight.'
 date: 2023-09-13
-venue: 'Preprint'
-paperurl: ''
-citation: 'Mukherjee, Sayan and Suppakitpaisarn, Vorapong. "Robustness for Spectral Clustering of General Graphs under Local Differential Privacy." <i>(preprint)</i>'
+venue: 'arXiv Preprint'
+paperurl: 'https://arxiv.org/abs/2309.06867'
+citation: 'Mukherjee, Sayan and Suppakitpaisarn, Vorapong. "Robustness for Spectral Clustering of General Graphs under Local Differential Privacy." <i>arXiv Preprint arXiv:2309.06867</i>'
 ---
 Spectral clustering is a widely used algorithm to find clusters in networks.
 Several researchers have studied the stability of spectral clustering under local differential privacy with the additional assumption that the underlying networks are generated from the stochastic block model (SBM).
