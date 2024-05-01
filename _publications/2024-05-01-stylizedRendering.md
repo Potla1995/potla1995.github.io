@@ -6,7 +6,7 @@ excerpt: 'A step towards integrating non-photorealistic stylizations into physic
 date: 2024-05-01
 venue: 'ACM Transactions on Graphics (SIGGRAPH 2024)'
 paperurl: 'https://doi.org/10.1145/3658161'
-citation: '**Rex West** and Sayan Mukherjee. "Stylized Rendering as a Function of Expectation." <i>ACM Trans. Graph. 43, 4, Article 96 (July 2024)</i>, 19 pages.'
+citation: 'Rex West and Sayan Mukherjee. "Stylized Rendering as a Function of Expectation." <i>ACM Trans. Graph. 43, 4, Article 96 (July 2024)</i>, 19 pages.'
 ---
 
 ![Teaser](/files/stylizedRenderingTeaser.png)	
