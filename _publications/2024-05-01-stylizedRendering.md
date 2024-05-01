@@ -5,9 +5,11 @@ permalink: /publication/stylizedRendering
 excerpt: 'A step towards integrating non-photorealistic stylizations into physically-based rendering systems.'
 date: 2024-05-01
 venue: 'ACM Transactions on Graphics (SIGGRAPH 2024)'
-paperurl: '/files/stylizedRending.pdf'
+paperurl: ''
 citation: 'West, Rex and Mukherjee, Sayan. "Stylized Rendering as a Function of Expectation." <i>ACM Transactions on Graphics (SIGGRAPH 2024)</i>.'
 ---
+
+![Teaser](/files/stylizedRenderingTeaser.png)
 
 We propose a generalization of the rendering equation that captures both the realistic light transport of physically-based rendering (PBR) and a subset of non-photorealistic rendering (NPR) stylizations in a principled manner.
 The proposed formulation is based on the key observation that both classical transport and certain NPR stylizations can be modeled as a function of expectation.
