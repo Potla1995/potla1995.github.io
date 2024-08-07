@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am a Project Assistant Professor (特任助教) under [Sustainable Quantum AI](https://sqai.jp/) and [Quantum Software Project Endowed Chair](http://qsw.phys.s.u-tokyo.ac.jp/) at [The University of Tokyo](https://www.u-tokyo.ac.jp/en/index.html).
+I am a Project Assistant Professor (特任助教) under [Sustainable Quantum AI, JST Grant JPMJPF2221](https://sqai.jp/) and [Quantum Software Project Endowed Chair](http://qsw.phys.s.u-tokyo.ac.jp/) at [The University of Tokyo](https://www.u-tokyo.ac.jp/en/index.html).
+My research is also supported by [JSPS Grant 24K22830](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K22830/).
 
 Till January 2024, I worked as an Applied Researcher at [Blueqat Research](https://corp.blueqat.com/research).
 
@@ -18,4 +19,4 @@ My undergraduate studies were completed in 2016 from the [Indian Statistical Ins
 
 ## Research Interests
 
-Tensor Network Contraction, Computer Graphics, Theoretical Machine Learning, Extremal Combinatorics.
+Tensor Network Contraction, Computer Graphics, Extremal Combinatorics, Theoretical Computer Science.
