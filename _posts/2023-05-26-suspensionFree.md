@@ -6,6 +6,9 @@ tags:
   - suspension, extremal graph theory
 ---
 
+This blog post has now appeared as a full paper in _Discrete Mathematics_.
+See [Exact generalized Tur\'an number for $K_3$ versus suspension of $P_4$](https://sayan.mukherjee.moe/publication/hatP4Free) for details.
+
 # Introduction: The generalized Tur\'an problem
 
 Given graphs $T$ and $H$, the generalized extremal number $\text{ex}(n, T, H)$ is given by the maximum number of (non-induced) copies of $T$ in an $H$-free graph on $n$ vertices.
