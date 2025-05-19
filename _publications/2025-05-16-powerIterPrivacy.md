@@ -6,7 +6,7 @@ excerpt: 'We modify the power iteration method to achieve locally differentially
 date: 2025-05-16
 venue: 'arXiv Preprint'
 paperurl: 'https://arxiv.org/abs/2505.11169'
-citation: 'Locally Differentially Private Graph Clustering via the Power Iteration Method." <i>arXiv Preprint arXiv:2505.11169</i>'
+citation: 'Suppakitpaisarn, Vorapong and Mukherjee, Sayan. "Locally Differentially Private Graph Clustering via the Power Iteration Method." <i>arXiv Preprint arXiv:2505.11169</i>'
 ---
 We propose a locally differentially private graph clustering algorithm.
 Previous works have explored this problem, including approaches that apply spectral clustering to graphs generated via the randomized response algorithm.
