@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/privacyClustering
 excerpt: 'Spectral clustering is robust for social networks in general with privacy budget $\epsilon=O(\log n)$, and this result is tight.'
 date: 2023-09-13
-venue: 'arXiv Preprint'
+venue: 'Accepted for publication at Transactions on Machine Learning Research'
 paperurl: 'https://arxiv.org/abs/2309.06867'
 citation: 'Mukherjee, Sayan and Suppakitpaisarn, Vorapong. "Robustness for Spectral Clustering of General Graphs under Local Differential Privacy." <i>arXiv Preprint arXiv:2309.06867</i>'
 ---
